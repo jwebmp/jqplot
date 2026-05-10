@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -24,7 +8,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.options.axis.JQPlotAxisOptions;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * The settings for the axes available
@@ -93,7 +76,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param xAxis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setxAxis(JQPlotAxisOptions xAxis)
 	{
 		this.xAxis = xAxis;
@@ -116,7 +98,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -143,7 +124,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param x2Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setX2Axis(JQPlotAxisOptions x2Axis)
 	{
 		this.x2Axis = x2Axis;
@@ -170,7 +150,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param yAxis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setyAxis(JQPlotAxisOptions yAxis)
 	{
 		this.yAxis = yAxis;
@@ -197,7 +176,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param y2Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setY2Axis(JQPlotAxisOptions y2Axis)
 	{
 		this.y2Axis = y2Axis;
@@ -224,7 +202,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param y3Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setY3Axis(JQPlotAxisOptions y3Axis)
 	{
 		this.y3Axis = y3Axis;
@@ -251,7 +228,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param y4Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setY4Axis(JQPlotAxisOptions y4Axis)
 	{
 		this.y4Axis = y4Axis;
@@ -278,7 +254,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param y5Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setY5Axis(JQPlotAxisOptions y5Axis)
 	{
 		this.y5Axis = y5Axis;
@@ -305,7 +280,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param y6Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setY6Axis(JQPlotAxisOptions y6Axis)
 	{
 		this.y6Axis = y6Axis;
@@ -332,7 +306,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param y7Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setY7Axis(JQPlotAxisOptions y7Axis)
 	{
 		this.y7Axis = y7Axis;
@@ -359,7 +332,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param y8Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setY8Axis(JQPlotAxisOptions y8Axis)
 	{
 		this.y8Axis = y8Axis;
@@ -386,7 +358,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param y9Axis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setY9Axis(JQPlotAxisOptions y9Axis)
 	{
 		this.y9Axis = y9Axis;
@@ -413,7 +384,6 @@ public class JQPlotAxes<J extends JQPlotAxes<J>>
 	 * @param zAxis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setzAxis(JQPlotAxisOptions zAxis)
 	{
 		this.zAxis = zAxis;

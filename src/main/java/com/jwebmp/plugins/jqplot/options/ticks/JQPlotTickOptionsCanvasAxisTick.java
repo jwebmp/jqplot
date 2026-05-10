@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.ticks;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -26,7 +10,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotTickRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * @author GedMarc
@@ -140,7 +123,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param mark
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMark(String mark)
 	{
 		this.mark = mark;
@@ -165,7 +147,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param showMark
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowMark(Boolean showMark)
 	{
 		this.showMark = showMark;
@@ -190,7 +171,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param showGridline
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowGridline(Boolean showGridline)
 	{
 		this.showGridline = showGridline;
@@ -215,7 +195,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param angle
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAngle(Integer angle)
 	{
 		this.angle = angle;
@@ -240,7 +219,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param isMinorTick
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setIsMinorTick(Boolean isMinorTick)
 	{
 		this.isMinorTick = isMinorTick;
@@ -265,7 +243,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param markSize
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMarkSize(Boolean markSize)
 	{
 		this.markSize = markSize;
@@ -290,7 +267,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param show
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShow(Boolean show)
 	{
 		this.show = show;
@@ -315,7 +291,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param showLabel
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowLabel(Boolean showLabel)
 	{
 		this.showLabel = showLabel;
@@ -340,7 +315,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param formatter
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFormatter(String formatter)
 	{
 		this.formatter = formatter;
@@ -365,7 +339,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param prefix
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPrefix(String prefix)
 	{
 		this.prefix = prefix;
@@ -390,7 +363,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param formatString
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFormatString(String formatString)
 	{
 		this.formatString = formatString;
@@ -415,7 +387,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param fontFamily
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontFamily(FontFamilies fontFamily)
 	{
 		this.fontFamily = fontFamily;
@@ -440,7 +411,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param fontSize
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontSize(String fontSize)
 	{
 		this.fontSize = fontSize;
@@ -465,7 +435,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param textColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTextColor(String textColor)
 	{
 		this.textColor = textColor;
@@ -490,7 +459,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param escapeHTML
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setEscapeHTML(Boolean escapeHTML)
 	{
 		this.escapeHTML = escapeHTML;
@@ -515,7 +483,6 @@ public class JQPlotTickOptionsCanvasAxisTick<J extends JQPlotTickOptionsCanvasAx
 	 * @param labelPosition
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLabelPosition(String labelPosition)
 	{
 		this.labelPosition = labelPosition;

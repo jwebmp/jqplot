@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options;
 
 import com.fasterxml.jackson.annotation.*;
@@ -25,7 +9,6 @@ import com.jwebmp.plugins.jqplot.options.title.JQPlotTitleOptions;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotMarkerRenderer;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotSeriesRenderer;
 
-import jakarta.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -164,7 +147,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * 		The title object to set
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTitle(JQPlotTitleOptions title)
 	{
 		this.title = title;
@@ -194,7 +176,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * 		The highlighting to use
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlighter(JQPlotHighlightOptions highlighter)
 	{
 		this.highlighter = highlighter;
@@ -223,7 +204,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param cursor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setCursor(JQPlotCursorOptions cursor)
 	{
 		this.cursor = cursor;
@@ -252,7 +232,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param seriesColours
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSeriesColours(List<String> seriesColours)
 	{
 		this.seriesColours = seriesColours;
@@ -281,7 +260,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param negativeSeriesColours
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setNegativeSeriesColours(List<String> negativeSeriesColours)
 	{
 		this.negativeSeriesColours = negativeSeriesColours;
@@ -310,7 +288,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param seriesDefaults
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSeriesDefaults(JQPlotSeriesOptions seriesDefaults)
 	{
 		this.seriesDefaults = seriesDefaults;
@@ -339,7 +316,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param series
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSeries(List<JQPlotSeriesOptions<?,?,?>> series)
 	{
 		this.series = series;
@@ -368,7 +344,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param axesDefaults
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAxesDefaults(JQPlotAxisOptions axesDefaults)
 	{
 		this.axesDefaults = axesDefaults;
@@ -391,7 +366,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -420,7 +394,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param legendOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLegendOptions(JQPlotLegendOptions legendOptions)
 	{
 		this.legendOptions = legendOptions;
@@ -449,7 +422,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param gridOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setGridOptions(JQPlotGridOptionsCanvasGrid gridOptions)
 	{
 		this.gridOptions = gridOptions;
@@ -485,7 +457,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param animate
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAnimate(Boolean animate)
 	{
 		this.animate = animate;
@@ -514,7 +485,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param animateReplot
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAnimateReplot(Boolean animateReplot)
 	{
 		this.animateReplot = animateReplot;
@@ -539,7 +509,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param sortData
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSortData(Boolean sortData)
 	{
 		this.sortData = sortData;
@@ -564,7 +533,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param stackSeries
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setStackSeries(Boolean stackSeries)
 	{
 		this.stackSeries = stackSeries;
@@ -589,7 +557,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param captureRightClick
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setCaptureRightClick(Boolean captureRightClick)
 	{
 		this.captureRightClick = captureRightClick;
@@ -639,7 +606,6 @@ public class JQPlotOptions<J extends JQPlotOptions<J>>
 	 * @param axes
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAxes(JQPlotAxes axes)
 	{
 		this.axes = axes;

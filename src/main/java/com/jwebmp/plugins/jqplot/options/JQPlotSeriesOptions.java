@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options;
 
 import com.fasterxml.jackson.annotation.*;
@@ -26,7 +10,6 @@ import com.jwebmp.plugins.jqplot.parts.YAxisTypes;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotMarkerRenderer;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotSeriesRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * @param <O>
@@ -211,7 +194,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param xaxis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setXaxis(XAxisTypes xaxis)
 	{
 		this.xaxis = xaxis;
@@ -234,7 +216,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param yaxis
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setYaxis(YAxisTypes yaxis)
 	{
 		this.yaxis = yaxis;
@@ -257,7 +238,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param label
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLabel(String label)
 	{
 		this.label = label;
@@ -280,7 +260,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param colors
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setColors(ColourHex colors)
 	{
 		this.colors = colors.getValue();
@@ -293,7 +272,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param colors
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setColors(String colors)
 	{
 		this.colors = colors;
@@ -316,7 +294,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param lineWidth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLineWidth(Double lineWidth)
 	{
 		this.lineWidth = lineWidth;
@@ -339,7 +316,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param shadowAngle
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowAngle(Integer shadowAngle)
 	{
 		this.shadowAngle = shadowAngle;
@@ -362,7 +338,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param shadowOffset
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowOffset(Double shadowOffset)
 	{
 		this.shadowOffset = shadowOffset;
@@ -385,7 +360,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param shadowDepth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowDepth(Double shadowDepth)
 	{
 		this.shadowDepth = shadowDepth;
@@ -408,7 +382,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param shadowAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowAlpha(Double shadowAlpha)
 	{
 		this.shadowAlpha = shadowAlpha;
@@ -431,7 +404,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param fill
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFill(Boolean fill)
 	{
 		this.fill = fill;
@@ -454,7 +426,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param fillAndStroke
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFillAndStroke(Boolean fillAndStroke)
 	{
 		this.fillAndStroke = fillAndStroke;
@@ -477,7 +448,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param fillColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFillColor(ColourHex fillColor)
 	{
 		this.fillColor = fillColor.getValue();
@@ -490,7 +460,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param fillColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFillColor(String fillColor)
 	{
 		this.fillColor = fillColor;
@@ -513,7 +482,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param fillAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFillAlpha(ColourHex fillAlpha)
 	{
 		this.fillAlpha = fillAlpha.getValue();
@@ -526,7 +494,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param fillAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFillAlpha(String fillAlpha)
 	{
 		this.fillAlpha = fillAlpha;
@@ -565,7 +532,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param rendererOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setRendererOptions(O rendererOptions)
 	{
 		this.rendererOptions = rendererOptions;
@@ -589,7 +555,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph<?,?> linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -612,7 +577,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param markerRenderer
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMarkerRenderer(String markerRenderer)
 	{
 		this.markerRenderer = markerRenderer;
@@ -639,7 +603,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param pointLabels
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPointLabels(JQPlotPointLabelsOptions<?> pointLabels)
 	{
 		this.pointLabels = pointLabels;
@@ -668,7 +631,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param markerRendererOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMarkerRendererOptions(M markerRendererOptions)
 	{
 		this.markerRendererOptions = markerRendererOptions;
@@ -692,7 +654,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param show
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShow(Boolean show)
 	{
 		this.show = show;
@@ -715,7 +676,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param shadow
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadow(Boolean shadow)
 	{
 		this.shadow = shadow;
@@ -739,7 +699,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param showLine Whether to show the line or not
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowLine(Boolean showLine)
 	{
 		this.showLine = showLine;
@@ -762,7 +721,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param showMarker
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowMarker(Boolean showMarker)
 	{
 		this.showMarker = showMarker;
@@ -785,7 +743,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param fillToZero
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFillToZero(Boolean fillToZero)
 	{
 		this.fillToZero = fillToZero;
@@ -812,7 +769,6 @@ public class JQPlotSeriesOptions<O extends JavaScriptPart<?> & JQPlotSeriesRende
 	 * @param linePattern
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinePattern(String linePattern)
 	{
 		this.linePattern = linePattern;

@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.axis;
 
 import com.fasterxml.jackson.annotation.*;
@@ -24,7 +8,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotAxisLabelRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * @author GedMarc
@@ -124,7 +107,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -149,7 +131,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param angle
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAngle(Integer angle)
 	{
 		this.angle = angle;
@@ -174,7 +155,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param show
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShow(Boolean show)
 	{
 		this.show = show;
@@ -199,7 +179,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param showLabel
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowLabel(Boolean showLabel)
 	{
 		this.showLabel = showLabel;
@@ -224,7 +203,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param label
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLabel(String label)
 	{
 		this.label = label;
@@ -249,7 +227,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param fontFamily
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontFamily(FontFamilies fontFamily)
 	{
 		this.fontFamily = fontFamily;
@@ -274,7 +251,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param fontSize
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontSize(Integer fontSize)
 	{
 		this.fontSize = fontSize;
@@ -299,7 +275,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param fontWeight
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontWeight(FontWeights fontWeight)
 	{
 		this.fontWeight = fontWeight;
@@ -324,7 +299,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param fontStretch
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontStretch(Integer fontStretch)
 	{
 		this.fontStretch = fontStretch;
@@ -349,7 +323,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param textColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTextColor(ColourHex textColor)
 	{
 		this.textColor = textColor;
@@ -374,7 +347,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param enableFontSupport
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setEnableFontSupport(Boolean enableFontSupport)
 	{
 		this.enableFontSupport = enableFontSupport;
@@ -407,7 +379,6 @@ public class JQPlotAxisLabelRendererOptionsCanvasLabels<J extends JQPlotAxisLabe
 	 * @param pt2px
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPt2px(Double pt2px)
 	{
 		this.pt2px = pt2px;

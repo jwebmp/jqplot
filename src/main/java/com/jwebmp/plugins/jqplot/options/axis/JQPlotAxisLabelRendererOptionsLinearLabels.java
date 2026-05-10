@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.axis;
 
 import com.fasterxml.jackson.annotation.*;
@@ -21,7 +5,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotAxisLabelRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * The default jqPlot axis renderer, creating a numeric axis.
@@ -86,7 +69,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param breakPoints
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBreakPoints(String breakPoints)
 	{
 		this.breakPoints = breakPoints;
@@ -109,7 +91,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param breakTickLabel
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBreakTickLabel(String breakTickLabel)
 	{
 		this.breakTickLabel = breakTickLabel;
@@ -132,7 +113,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param drawBaseline
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDrawBaseline(Boolean drawBaseline)
 	{
 		this.drawBaseline = drawBaseline;
@@ -155,7 +135,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param baselineWidth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBaselineWidth(Integer baselineWidth)
 	{
 		this.baselineWidth = baselineWidth;
@@ -178,7 +157,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param baselineColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBaselineColor(String baselineColor)
 	{
 		this.baselineColor = baselineColor;
@@ -201,7 +179,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param forceTickAt0
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setForceTickAt0(Boolean forceTickAt0)
 	{
 		this.forceTickAt0 = forceTickAt0;
@@ -224,7 +201,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param forceTickAt100
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setForceTickAt100(Boolean forceTickAt100)
 	{
 		this.forceTickAt100 = forceTickAt100;
@@ -251,7 +227,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param tickInset
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTickInset(Integer tickInset)
 	{
 		this.tickInset = tickInset;
@@ -274,7 +249,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param minorTicks
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMinorTicks(Integer minorTicks)
 	{
 		this.minorTicks = minorTicks;
@@ -297,7 +271,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param alignTicks
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAlignTicks(Boolean alignTicks)
 	{
 		this.alignTicks = alignTicks;
@@ -328,7 +301,6 @@ public class JQPlotAxisLabelRendererOptionsLinearLabels<J extends JQPlotAxisLabe
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;

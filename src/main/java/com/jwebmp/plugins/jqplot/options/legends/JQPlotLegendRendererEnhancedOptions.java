@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.legends;
 
 import com.fasterxml.jackson.annotation.*;
@@ -21,7 +5,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotLegendRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * @author GedMarc
@@ -93,7 +76,6 @@ public class JQPlotLegendRendererEnhancedOptions<J extends JQPlotLegendRendererE
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -116,7 +98,6 @@ public class JQPlotLegendRendererEnhancedOptions<J extends JQPlotLegendRendererE
 	 * @param numberRows
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setNumberRows(Integer numberRows)
 	{
 		this.numberRows = numberRows;
@@ -139,7 +120,6 @@ public class JQPlotLegendRendererEnhancedOptions<J extends JQPlotLegendRendererE
 	 * @param numberColumns
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setNumberColumns(Integer numberColumns)
 	{
 		this.numberColumns = numberColumns;
@@ -162,7 +142,6 @@ public class JQPlotLegendRendererEnhancedOptions<J extends JQPlotLegendRendererE
 	 * @param seriesToggle
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSeriesToggle(Boolean seriesToggle)
 	{
 		this.seriesToggle = seriesToggle;
@@ -185,7 +164,6 @@ public class JQPlotLegendRendererEnhancedOptions<J extends JQPlotLegendRendererE
 	 * @param seriesToggleReplot
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSeriesToggleReplot(Boolean seriesToggleReplot)
 	{
 		this.seriesToggleReplot = seriesToggleReplot;
@@ -208,7 +186,6 @@ public class JQPlotLegendRendererEnhancedOptions<J extends JQPlotLegendRendererE
 	 * @param disableIEFading
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDisableIEFading(Boolean disableIEFading)
 	{
 		this.disableIEFading = disableIEFading;

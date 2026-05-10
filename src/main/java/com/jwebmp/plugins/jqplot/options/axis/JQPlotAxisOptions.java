@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.axis;
 
 import com.fasterxml.jackson.annotation.*;
@@ -24,7 +8,6 @@ import com.jwebmp.plugins.jqplot.options.ticks.JQPlotTickOptionsAxisTick;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotAxisLabelRenderer;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotTickRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 import java.util.List;
 import java.util.Set;
@@ -182,7 +165,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param show
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShow(Boolean show)
 	{
 		this.show = show;
@@ -207,7 +189,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param showLabel
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowLabel(Boolean showLabel)
 	{
 		this.showLabel = showLabel;
@@ -232,7 +213,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param autoscale
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAutoscale(Boolean autoscale)
 	{
 		this.autoscale = autoscale;
@@ -257,7 +237,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param min
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMin(Integer min)
 	{
 		this.min = min;
@@ -282,7 +261,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param max
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMax(Integer max)
 	{
 		this.max = max;
@@ -307,7 +285,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param pad
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPad(Double pad)
 	{
 		this.pad = pad;
@@ -333,7 +310,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param ticks
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTicks(List<String> ticks)
 	{
 		this.ticks = ticks;
@@ -358,7 +334,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param numberTicks
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setNumberTicks(Integer numberTicks)
 	{
 		this.numberTicks = numberTicks;
@@ -383,7 +358,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param tickInterval
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTickInterval(Integer tickInterval)
 	{
 		this.tickInterval = tickInterval;
@@ -408,7 +382,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param showTicks
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowTicks(Boolean showTicks)
 	{
 		this.showTicks = showTicks;
@@ -433,7 +406,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param showTickMarks
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowTickMarks(Boolean showTickMarks)
 	{
 		this.showTickMarks = showTickMarks;
@@ -498,7 +470,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param label
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLabel(String label)
 	{
 		this.label = label;
@@ -523,7 +494,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param padMax
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPadMax(Integer padMax)
 	{
 		this.padMax = padMax;
@@ -548,7 +518,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param padMin
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPadMin(Integer padMin)
 	{
 		this.padMin = padMin;
@@ -573,7 +542,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param showMinorTicks
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowMinorTicks(Boolean showMinorTicks)
 	{
 		this.showMinorTicks = showMinorTicks;
@@ -598,7 +566,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param useSeriesColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setUseSeriesColor(Boolean useSeriesColor)
 	{
 		this.useSeriesColor = useSeriesColor;
@@ -623,7 +590,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param borderWidth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBorderWidth(Integer borderWidth)
 	{
 		this.borderWidth = borderWidth;
@@ -648,7 +614,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param borderColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBorderColor(ColourHex borderColor)
 	{
 		this.borderColor = borderColor.getValue();
@@ -673,7 +638,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param syncTicks
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSyncTicks(Boolean syncTicks)
 	{
 		this.syncTicks = syncTicks;
@@ -698,7 +662,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param tickSpacing
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTickSpacing(Integer tickSpacing)
 	{
 		this.tickSpacing = tickSpacing;
@@ -722,7 +685,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param rendererOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setRendererOptions(O rendererOptions)
 	{
 		this.rendererOptions = rendererOptions;
@@ -770,7 +732,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -783,7 +744,6 @@ public class JQPlotAxisOptions<O extends JavaScriptPart & JQPlotAxisLabelRendere
 	 * @param labelRendererOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLabelRendererOptions(JQPlotAxisLabelRenderer labelRendererOptions)
 	{
 		this.labelRendererOptions = labelRendererOptions;

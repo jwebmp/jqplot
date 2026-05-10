@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.series;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -24,7 +8,6 @@ import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.options.JQPlotOptions;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotSeriesRenderer;
 
-import jakarta.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -150,7 +133,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -186,7 +168,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param diameter
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDiameter(Integer diameter)
 	{
 		this.diameter = diameter;
@@ -210,7 +191,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param padding
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPadding(Double padding)
 	{
 		this.padding = padding;
@@ -234,7 +214,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param sliceMargin
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSliceMargin(Integer sliceMargin)
 	{
 		this.sliceMargin = sliceMargin;
@@ -258,7 +237,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param fill
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFill(Boolean fill)
 	{
 		this.fill = fill;
@@ -282,7 +260,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param shadowOffset
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowOffset(Integer shadowOffset)
 	{
 		this.shadowOffset = shadowOffset;
@@ -307,7 +284,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param shadowAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowAlpha(Double shadowAlpha)
 	{
 		this.shadowAlpha = shadowAlpha;
@@ -331,7 +307,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param shadowDepth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowDepth(Integer shadowDepth)
 	{
 		this.shadowDepth = shadowDepth;
@@ -355,7 +330,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param highlightMouseOver
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightMouseOver(Boolean highlightMouseOver)
 	{
 		this.highlightMouseOver = highlightMouseOver;
@@ -379,7 +353,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param highlightMouseDown
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightMouseDown(Boolean highlightMouseDown)
 	{
 		this.highlightMouseDown = highlightMouseDown;
@@ -403,7 +376,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param highlightColors
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightColors(List<String> highlightColors)
 	{
 		this.highlightColors = highlightColors;
@@ -427,7 +399,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param dataLabels
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDataLabels(String dataLabels)
 	{
 		this.dataLabels = dataLabels;
@@ -451,7 +422,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param showDataLabels
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowDataLabels(Boolean showDataLabels)
 	{
 		this.showDataLabels = showDataLabels;
@@ -475,7 +445,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param dataLabelFormatString
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDataLabelFormatString(String dataLabelFormatString)
 	{
 		this.dataLabelFormatString = dataLabelFormatString;
@@ -499,7 +468,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param dataLabelThreshold
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDataLabelThreshold(Integer dataLabelThreshold)
 	{
 		this.dataLabelThreshold = dataLabelThreshold;
@@ -523,7 +491,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param dataLabelPositionFactor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDataLabelPositionFactor(Double dataLabelPositionFactor)
 	{
 		this.dataLabelPositionFactor = dataLabelPositionFactor;
@@ -547,7 +514,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param dataLabelNudge
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDataLabelNudge(Integer dataLabelNudge)
 	{
 		this.dataLabelNudge = dataLabelNudge;
@@ -571,7 +537,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param dataLabelCenterOn
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDataLabelCenterOn(Boolean dataLabelCenterOn)
 	{
 		this.dataLabelCenterOn = dataLabelCenterOn;
@@ -595,7 +560,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param startAngle
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setStartAngle(Integer startAngle)
 	{
 		this.startAngle = startAngle;
@@ -619,7 +583,6 @@ public class JQPlotSeriesDonutOptions<J extends JQPlotSeriesDonutOptions<J>>
 	 * @param showSlice
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowSlice(List<Boolean> showSlice)
 	{
 		this.showSlice = showSlice;

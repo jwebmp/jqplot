@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -25,7 +9,6 @@ import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.MarkerStyles;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotMarkerRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * The specific marker options available
@@ -121,7 +104,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param show
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShow(Boolean show)
 	{
 		this.show = show;
@@ -144,7 +126,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param style
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setStyle(MarkerStyles style)
 	{
 		this.style = style;
@@ -167,7 +148,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param lineWidth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLineWidth(Integer lineWidth)
 	{
 		this.lineWidth = lineWidth;
@@ -190,7 +170,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param size
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSize(Integer size)
 	{
 		this.size = size;
@@ -213,7 +192,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param color
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setColor(ColourHex color)
 	{
 		this.color = color.getValue();
@@ -237,7 +215,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param shadow
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadow(Boolean shadow)
 	{
 		this.shadow = shadow;
@@ -260,7 +237,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param shadowAngle
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowAngle(Integer shadowAngle)
 	{
 		this.shadowAngle = shadowAngle;
@@ -283,7 +259,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param shadowOffset
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowOffset(Integer shadowOffset)
 	{
 		this.shadowOffset = shadowOffset;
@@ -306,7 +281,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param shadowDepth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowDepth(Integer shadowDepth)
 	{
 		this.shadowDepth = shadowDepth;
@@ -329,7 +303,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param shadowAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowAlpha(Double shadowAlpha)
 	{
 		this.shadowAlpha = shadowAlpha;
@@ -359,7 +332,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param shadowRenderer
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowRenderer(JavaScriptPart shadowRenderer)
 	{
 		this.shadowRenderer = shadowRenderer;
@@ -382,7 +354,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param shapeRenderer
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShapeRenderer(JavaScriptPart shapeRenderer)
 	{
 		this.shapeRenderer = shapeRenderer;
@@ -405,7 +376,6 @@ public class JQPlotMarkerOptions<J extends JQPlotMarkerOptions<J>>
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;

@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.title;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -26,7 +10,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotTitleRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * Handles the text attribute of the JWGraph
@@ -110,7 +93,6 @@ public class JQPlotTitleOptions<O extends JavaScriptPart<O> & JQPlotTitleRendere
 	 * @param show
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShow(Boolean show)
 	{
 		this.show = show;
@@ -135,7 +117,6 @@ public class JQPlotTitleOptions<O extends JavaScriptPart<O> & JQPlotTitleRendere
 	 * @param text
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setText(String text)
 	{
 		this.text = text;
@@ -160,7 +141,6 @@ public class JQPlotTitleOptions<O extends JavaScriptPart<O> & JQPlotTitleRendere
 	 * @param fontFamily
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontFamily(FontFamilies fontFamily)
 	{
 		this.fontFamily = fontFamily;
@@ -185,7 +165,6 @@ public class JQPlotTitleOptions<O extends JavaScriptPart<O> & JQPlotTitleRendere
 	 * @param fontSize
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontSize(Integer fontSize)
 	{
 		this.fontSize = fontSize;
@@ -210,7 +189,6 @@ public class JQPlotTitleOptions<O extends JavaScriptPart<O> & JQPlotTitleRendere
 	 * @param textAlign
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTextAlign(TextAlignments textAlign)
 	{
 		this.textAlign = textAlign;
@@ -235,7 +213,6 @@ public class JQPlotTitleOptions<O extends JavaScriptPart<O> & JQPlotTitleRendere
 	 * @param textColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTextColor(ColourHex textColor)
 	{
 		this.textColor = textColor.getValue();
@@ -273,7 +250,6 @@ public class JQPlotTitleOptions<O extends JavaScriptPart<O> & JQPlotTitleRendere
 	 * @param rendererOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setRendererOptions(O rendererOptions)
 	{
 		this.rendererOptions = rendererOptions;

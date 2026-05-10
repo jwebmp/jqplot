@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.series;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -26,7 +10,6 @@ import com.jwebmp.plugins.jqplot.options.JQPlotMarkerOptions;
 import com.jwebmp.plugins.jqplot.options.JQPlotSeriesOptions;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotSeriesRenderer;
 
-import jakarta.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -137,7 +120,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param barPadding
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBarPadding(Integer barPadding)
 	{
 		this.barPadding = barPadding;
@@ -162,7 +144,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param barMargin
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBarMargin(Integer barMargin)
 	{
 		this.barMargin = barMargin;
@@ -187,7 +168,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param barDirection
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBarDirection(Orientation barDirection)
 	{
 		this.barDirection = barDirection;
@@ -212,7 +192,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param barWidth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBarWidth(Integer barWidth)
 	{
 		this.barWidth = barWidth;
@@ -237,7 +216,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param shadowOffset
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowOffset(Double shadowOffset)
 	{
 		this.shadowOffset = shadowOffset;
@@ -262,7 +240,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param shadowDepth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowDepth(Double shadowDepth)
 	{
 		this.shadowDepth = shadowDepth;
@@ -287,7 +264,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param shadowAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowAlpha(Double shadowAlpha)
 	{
 		this.shadowAlpha = shadowAlpha;
@@ -312,7 +288,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param waterfall
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setWaterfall(Boolean waterfall)
 	{
 		this.waterfall = waterfall;
@@ -337,7 +312,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param groups
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setGroups(Integer groups)
 	{
 		this.groups = groups;
@@ -362,7 +336,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param varyBarColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setVaryBarColor(Boolean varyBarColor)
 	{
 		this.varyBarColor = varyBarColor;
@@ -388,7 +361,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param highlightMouseOver
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightMouseOver(Boolean highlightMouseOver)
 	{
 		this.highlightMouseOver = highlightMouseOver;
@@ -413,7 +385,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param highlightMouseDown
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightMouseDown(Boolean highlightMouseDown)
 	{
 		this.highlightMouseDown = highlightMouseDown;
@@ -442,7 +413,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param highlightColors
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightColors(List<String> highlightColors)
 	{
 		this.highlightColors = highlightColors;
@@ -473,7 +443,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param transposedData
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTransposedData(Boolean transposedData)
 	{
 		this.transposedData = transposedData;
@@ -496,7 +465,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -519,7 +487,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param fillToZero
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFillToZero(Boolean fillToZero)
 	{
 		this.fillToZero = fillToZero;
@@ -548,7 +515,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param useNegativeColors
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setUseNegativeColors(Boolean useNegativeColors)
 	{
 		this.useNegativeColors = useNegativeColors;
@@ -571,7 +537,6 @@ public class JQPlotSeriesBarOptions<J extends JQPlotSeriesBarOptions<J>>
 	 * @param disableStack
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDisableStack(Boolean disableStack)
 	{
 		this.disableStack = disableStack;

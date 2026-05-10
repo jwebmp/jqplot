@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.series;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -23,7 +7,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotSeriesRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * @author GedMarc
@@ -130,7 +113,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -164,7 +146,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param varyBubbleColors
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setVaryBubbleColors(boolean varyBubbleColors)
 	{
 		this.varyBubbleColors = varyBubbleColors;
@@ -187,7 +168,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param autoscaleBubbles
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAutoscaleBubbles(boolean autoscaleBubbles)
 	{
 		this.autoscaleBubbles = autoscaleBubbles;
@@ -210,7 +190,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param autoscaleMultiplier
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAutoscaleMultiplier(int autoscaleMultiplier)
 	{
 		this.autoscaleMultiplier = autoscaleMultiplier;
@@ -233,7 +212,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param autoscalePointsFactor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setAutoscalePointsFactor(int autoscalePointsFactor)
 	{
 		this.autoscalePointsFactor = autoscalePointsFactor;
@@ -256,7 +234,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param escapeHtml
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setEscapeHtml(boolean escapeHtml)
 	{
 		this.escapeHtml = escapeHtml;
@@ -279,7 +256,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param highlightMouseOver
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightMouseOver(boolean highlightMouseOver)
 	{
 		this.highlightMouseOver = highlightMouseOver;
@@ -302,7 +278,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param highlightMouseDown
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightMouseDown(boolean highlightMouseDown)
 	{
 		this.highlightMouseDown = highlightMouseDown;
@@ -325,7 +300,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param highlightColors
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightColors(String highlightColors)
 	{
 		this.highlightColors = highlightColors;
@@ -348,7 +322,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param bubbleAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBubbleAlpha(double bubbleAlpha)
 	{
 		this.bubbleAlpha = bubbleAlpha;
@@ -371,7 +344,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param highlightAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHighlightAlpha(double highlightAlpha)
 	{
 		this.highlightAlpha = highlightAlpha;
@@ -394,7 +366,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param bubbleGradients
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBubbleGradients(boolean bubbleGradients)
 	{
 		this.bubbleGradients = bubbleGradients;
@@ -417,7 +388,6 @@ public class JQPlotSeriesBubbleOptions<J extends JQPlotSeriesBubbleOptions<J>>
 	 * @param showLabels
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowLabels(boolean showLabels)
 	{
 		this.showLabels = showLabels;

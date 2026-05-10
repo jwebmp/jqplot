@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.axis;
 
 import com.fasterxml.jackson.annotation.*;
@@ -22,7 +6,6 @@ import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotAxisLabelRenderer;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotTickRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * @author GedMarc
@@ -82,7 +65,6 @@ public class JQPlotAxisLabelRendererOptionsCategoryLabels<O extends JavaScriptPa
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -105,7 +87,6 @@ public class JQPlotAxisLabelRendererOptionsCategoryLabels<O extends JavaScriptPa
 	 * @param sortMergedLabels
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSortMergedLabels(Boolean sortMergedLabels)
 	{
 		this.sortMergedLabels = sortMergedLabels;
@@ -128,7 +109,6 @@ public class JQPlotAxisLabelRendererOptionsCategoryLabels<O extends JavaScriptPa
 	 * @param tickRenderer
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTickRenderer(O tickRenderer)
 	{
 		this.tickRenderer = tickRenderer;

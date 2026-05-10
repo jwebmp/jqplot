@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -28,7 +12,6 @@ import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.options.legends.JQPlotLegendRendererEnhancedOptions;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotLegendRenderer;
 
-import jakarta.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -166,7 +149,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param show
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShow(Boolean show)
 	{
 		this.show = show;
@@ -191,7 +173,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param location
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLocation(CompassPoints location)
 	{
 		this.location = location;
@@ -212,7 +193,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * <p>
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setXoffset(Integer xoffset)
 	{
 		this.xoffset = xoffset;
@@ -233,7 +213,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * <p>
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setYoffset(Integer yoffset)
 	{
 		this.yoffset = yoffset;
@@ -262,7 +241,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param labels
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLabels(List<String> labels)
 	{
 		this.labels = labels;
@@ -287,7 +265,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param showLabels
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShowLabels(Boolean showLabels)
 	{
 		this.showLabels = showLabels;
@@ -343,7 +320,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param placement
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPlacement(String placement)
 	{
 		this.placement = placement;
@@ -368,7 +344,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param border
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBorder(String border)
 	{
 		this.border = border;
@@ -393,7 +368,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param background
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBackground(String background)
 	{
 		this.background = background;
@@ -418,7 +392,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param textColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTextColor(ColourHex textColor)
 	{
 		this.textColor = textColor.getValue();
@@ -443,7 +416,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param fontFamily
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontFamily(FontFamilies fontFamily)
 	{
 		this.fontFamily = fontFamily;
@@ -468,7 +440,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param fontSize
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFontSize(Integer fontSize)
 	{
 		this.fontSize = fontSize;
@@ -493,7 +464,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param rowSpacing
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setRowSpacing(Integer rowSpacing)
 	{
 		this.rowSpacing = rowSpacing;
@@ -518,7 +488,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param predraw
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setPredraw(Boolean predraw)
 	{
 		this.predraw = predraw;
@@ -543,7 +512,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param marginTop
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMarginTop(Integer marginTop)
 	{
 		this.marginTop = marginTop;
@@ -568,7 +536,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param marginRight
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMarginRight(Integer marginRight)
 	{
 		this.marginRight = marginRight;
@@ -593,7 +560,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param marginBottom
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMarginBottom(Integer marginBottom)
 	{
 		this.marginBottom = marginBottom;
@@ -618,7 +584,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param marginLeft
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setMarginLeft(Integer marginLeft)
 	{
 		this.marginLeft = marginLeft;
@@ -657,7 +622,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -670,7 +634,6 @@ public class JQPlotLegendOptions<O extends JavaScriptPart<O> & JQPlotLegendRende
 	 * @param rendererOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setRendererOptions(O rendererOptions)
 	{
 		renderer = rendererOptions.getRenderer();

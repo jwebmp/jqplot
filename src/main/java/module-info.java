@@ -11,25 +11,20 @@ module com.jwebmp.plugins.jqplot {
 	exports com.jwebmp.plugins.jqplot.options.series;
 	exports com.jwebmp.plugins.jqplot.options.ticks;
 	exports com.jwebmp.plugins.jqplot.options.title;
-
 	exports com.jwebmp.plugins.jqplot.graphs;
 	exports com.jwebmp.plugins.jqplot.graphs.display;
 	exports com.jwebmp.plugins.jqplot.references;
 
 	requires com.jwebmp.core;
-	
-	
+	requires com.jwebmp.core.base.angular.client;
 	requires com.google.common;
-
-	requires jakarta.validation;
-	requires java.logging;
 	requires com.guicedee.guicedinjection;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.jqplot.JQPlotPageConfigurator;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions with JQPlotInclusionModule;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.jqplot.implementations.JQPlotExclusionsModule;
+	provides com.guicedee.client.services.config.IGuiceScanModuleInclusions with JQPlotInclusionModule;
+	provides com.guicedee.client.services.config.IGuiceScanModuleExclusions with com.jwebmp.plugins.jqplot.implementations.JQPlotExclusionsModule;
 
-	opens com.jwebmp.plugins.jqplot to com.fasterxml.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot to com.fasterxml.jackson.databind, com.google.guice, com.jwebmp.core;
 	opens com.jwebmp.plugins.jqplot.parts to com.fasterxml.jackson.databind, com.jwebmp.core;
 	opens com.jwebmp.plugins.jqplot.parts.interfaces to com.fasterxml.jackson.databind, com.jwebmp.core;
 	opens com.jwebmp.plugins.jqplot.options to com.fasterxml.jackson.databind, com.jwebmp.core;

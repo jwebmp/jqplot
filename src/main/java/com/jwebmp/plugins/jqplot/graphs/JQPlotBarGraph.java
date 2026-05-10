@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.graphs;
 
 import com.jwebmp.core.base.servlets.enumarations.Orientation;
@@ -26,13 +10,11 @@ import com.jwebmp.plugins.jqplot.options.axis.JQPlotAxisLabelRendererOptionsCate
 import com.jwebmp.plugins.jqplot.options.axis.JQPlotAxisOptions;
 import com.jwebmp.plugins.jqplot.options.series.JQPlotSeriesBarOptions;
 
-import jakarta.validation.constraints.NotNull;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static com.guicedee.services.jsonrepresentation.json.StaticStrings.*;
-import static com.jwebmp.core.utilities.StaticStrings.*;
+import static com.guicedee.modules.services.jsonrepresentation.json.StaticStrings.*;
 
 /**
  * Constructs a new JQPlotBar Graph default series display
@@ -50,11 +32,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 public class JQPlotBarGraph<J extends JQPlotBarGraph<J>>
 		extends JQPlotGraph<JQPlotSeriesBarOptions<?>, J>
 {
-
-	/**
-	 * The logger for the swing Servlet
-	 */
-	
+	private static final Logger log = Logger.getLogger(JQPlotBarGraph.class.getName());
 	/**
 	 * The bar graph options
 	 */
@@ -153,7 +131,6 @@ public class JQPlotBarGraph<J extends JQPlotBarGraph<J>>
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setCategorizedAxisRenderer()
 	{
 		getOptions().getAxes()

@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.axis;
 
 import com.fasterxml.jackson.annotation.*;
@@ -23,7 +7,6 @@ import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotAxisRenderer;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotTickRenderer;
 import com.jwebmp.plugins.jqplot.references.JQPlotJavascriptReferencePool;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * A plugin for a jqPlot to render an axis as a series of date values. This renderer has no options beyond those supplied by the Axis class. It supplies its own tick formatter, so
@@ -134,7 +117,6 @@ public class JQPlotAxisDateRendererOptions<J extends JQPlotAxisDateRendererOptio
 	 * @param linkedGraph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
@@ -157,7 +139,6 @@ public class JQPlotAxisDateRendererOptions<J extends JQPlotAxisDateRendererOptio
 	 * @param tickRenderer
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTickRenderer(JQPlotTickRenderer tickRenderer)
 	{
 		this.tickRenderer = tickRenderer;
@@ -180,7 +161,6 @@ public class JQPlotAxisDateRendererOptions<J extends JQPlotAxisDateRendererOptio
 	 * @param tickInset
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setTickInset(Integer tickInset)
 	{
 		this.tickInset = tickInset;
@@ -203,7 +183,6 @@ public class JQPlotAxisDateRendererOptions<J extends JQPlotAxisDateRendererOptio
 	 * @param drawBaseline
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDrawBaseline(Boolean drawBaseline)
 	{
 		this.drawBaseline = drawBaseline;
@@ -226,7 +205,6 @@ public class JQPlotAxisDateRendererOptions<J extends JQPlotAxisDateRendererOptio
 	 * @param baselineWidth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBaselineWidth(Integer baselineWidth)
 	{
 		this.baselineWidth = baselineWidth;
@@ -249,7 +227,6 @@ public class JQPlotAxisDateRendererOptions<J extends JQPlotAxisDateRendererOptio
 	 * @param baselineColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBaselineColor(String baselineColor)
 	{
 		this.baselineColor = baselineColor;

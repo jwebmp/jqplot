@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options.grid;
 
 import com.fasterxml.jackson.annotation.*;
@@ -22,7 +6,6 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 import com.jwebmp.plugins.jqplot.parts.interfaces.JQPlotGridRenderer;
 
-import jakarta.validation.constraints.NotNull;
 
 /**
  * @author GedMarc
@@ -125,7 +108,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param drawGridLines
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setDrawGridLines(Boolean drawGridLines)
 	{
 		this.drawGridLines = drawGridLines;
@@ -148,7 +130,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param gridLineColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setGridLineColor(ColourHex gridLineColor)
 	{
 		this.gridLineColor = gridLineColor.getValue();
@@ -171,7 +152,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param background
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBackground(ColourHex background)
 	{
 		this.background = background.getValue();
@@ -194,7 +174,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param borderColor
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBorderColor(ColourHex borderColor)
 	{
 		this.borderColor = borderColor.getValue();
@@ -217,7 +196,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param borderWidth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setBorderWidth(Double borderWidth)
 	{
 		this.borderWidth = borderWidth;
@@ -240,7 +218,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param shadow
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadow(Boolean shadow)
 	{
 		this.shadow = shadow;
@@ -263,7 +240,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param shadowAngle
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowAngle(Integer shadowAngle)
 	{
 		this.shadowAngle = shadowAngle;
@@ -286,7 +262,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param shadowOffset
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowOffset(Double shadowOffset)
 	{
 		this.shadowOffset = shadowOffset;
@@ -309,7 +284,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param shadowWidth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowWidth(Integer shadowWidth)
 	{
 		this.shadowWidth = shadowWidth;
@@ -332,7 +306,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param shadowDepth
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowDepth(Integer shadowDepth)
 	{
 		this.shadowDepth = shadowDepth;
@@ -355,7 +328,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param shadowAlpha
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShadowAlpha(Double shadowAlpha)
 	{
 		this.shadowAlpha = shadowAlpha;
@@ -378,7 +350,6 @@ public class JQPlotGridOptionsCanvasGrid<J extends JQPlotGridOptionsCanvasGrid<J
 	 * @param rendererOptions
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setRendererOptions(JavaScriptPart rendererOptions)
 	{
 		this.rendererOptions = rendererOptions;

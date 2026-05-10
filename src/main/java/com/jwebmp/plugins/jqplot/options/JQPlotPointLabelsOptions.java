@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2017 GedMarc
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.jwebmp.plugins.jqplot.options;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -23,7 +7,6 @@ import com.jwebmp.core.generics.CompassPoints;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import com.jwebmp.plugins.jqplot.JQPlotGraph;
 
-import jakarta.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -124,7 +107,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param show
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setShow(Boolean show)
 	{
 		this.show = show;
@@ -147,7 +129,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param location
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLocation(CompassPoints location)
 	{
 		this.location = location;
@@ -170,7 +151,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param labelsFromSeries
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLabelsFromSeries(Boolean labelsFromSeries)
 	{
 		this.labelsFromSeries = labelsFromSeries;
@@ -193,7 +173,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param seriesLabelIndex
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setSeriesLabelIndex(List seriesLabelIndex)
 	{
 		this.seriesLabelIndex = seriesLabelIndex;
@@ -222,7 +201,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param labels
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLabels(List<String> labels)
 	{
 		this.labels = labels;
@@ -245,7 +223,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param stackedValue
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setStackedValue(Boolean stackedValue)
 	{
 		this.stackedValue = stackedValue;
@@ -268,7 +245,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param ypadding
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setYpadding(Integer ypadding)
 	{
 		this.ypadding = ypadding;
@@ -291,7 +267,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param xpadding
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setXpadding(Integer xpadding)
 	{
 		this.xpadding = xpadding;
@@ -314,7 +289,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param escapeHTML
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setEscapeHTML(Boolean escapeHTML)
 	{
 		this.escapeHTML = escapeHTML;
@@ -337,7 +311,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param edgeTolerance
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setEdgeTolerance(Integer edgeTolerance)
 	{
 		this.edgeTolerance = edgeTolerance;
@@ -360,7 +333,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param formatter
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFormatter(String formatter)
 	{
 		this.formatter = formatter;
@@ -383,7 +355,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param formatString
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setFormatString(String formatString)
 	{
 		this.formatString = formatString;
@@ -406,7 +377,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * @param hideZeros
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setHideZeros(Boolean hideZeros)
 	{
 		this.hideZeros = hideZeros;
@@ -427,7 +397,6 @@ public class JQPlotPointLabelsOptions<J extends JQPlotPointLabelsOptions<J>>
 	 * Sets the linked graph
 	 */
 	@SuppressWarnings("unchecked")
-	@NotNull
 	public J setLinkedGraph(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
