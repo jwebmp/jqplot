@@ -112,7 +112,6 @@ public class JQPlotSeriesPieOptions<J extends JQPlotSeriesPieOptions<J>>
 	 *
 	 * @param linkedGraph
 	 */
-	@SuppressWarnings("unchecked")
 	public JQPlotSeriesPieOptions(JQPlotGraph linkedGraph)
 	{
 		this.linkedGraph = linkedGraph;
