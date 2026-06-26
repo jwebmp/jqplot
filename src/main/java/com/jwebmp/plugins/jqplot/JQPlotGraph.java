@@ -1,6 +1,6 @@
 package com.jwebmp.plugins.jqplot;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import tools.jackson.core.JacksonException;
 import com.guicedee.client.IGuiceContext;
 import com.guicedee.client.implementations.ObjectBinderKeys;
 import com.jwebmp.core.Component;
@@ -106,7 +106,7 @@ public class JQPlotGraph<O extends JavaScriptPart<?>, J extends JQPlotGraph<O, J
 			return new StringBuilder(IGuiceContext.get(ObjectBinderKeys.DefaultObjectMapper)
 			                                     .writeValueAsString(seriesData));
 		}
-		catch (JsonProcessingException e)
+		catch (JacksonException e)
 		{
 			return new StringBuilder("Failed to construct data renderer " + e.getMessage() + " - " + ExceptionUtils.getStackTrace(e));
 		}

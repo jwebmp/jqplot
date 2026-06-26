@@ -24,16 +24,16 @@ module com.jwebmp.plugins.jqplot {
 	provides com.guicedee.client.services.config.IGuiceScanModuleInclusions with JQPlotInclusionModule;
 	provides com.guicedee.client.services.config.IGuiceScanModuleExclusions with com.jwebmp.plugins.jqplot.implementations.JQPlotExclusionsModule;
 
-	opens com.jwebmp.plugins.jqplot to com.fasterxml.jackson.databind, com.google.guice, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.parts to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.parts.interfaces to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.options to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.options.axis to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.options.grid to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.options.legends to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.options.series to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.options.ticks to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.options.title to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.graphs to com.fasterxml.jackson.databind, com.jwebmp.core;
-	opens com.jwebmp.plugins.jqplot.graphs.display to com.fasterxml.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot to tools.jackson.databind, com.google.guice, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.parts to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.parts.interfaces to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.options to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.options.axis to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.options.grid to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.options.legends to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.options.series to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.options.ticks to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.options.title to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.graphs to tools.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqplot.graphs.display to tools.jackson.databind, com.jwebmp.core;
 }
